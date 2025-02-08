@@ -4,7 +4,6 @@ import { useState } from 'react'
 import { Input } from "@heroui/input"
 import { Button } from '@heroui/button'
 import { ChatSession, GoogleGenerativeAI } from '@google/generative-ai'
-import { PaperAirplaneIcon } from '@heroicons/react/24/solid'
 import ReactMarkdown from 'react-markdown'
 
 export function Chat({ apiKey }: { apiKey: string }) {
@@ -29,7 +28,7 @@ export function Chat({ apiKey }: { apiKey: string }) {
     }
 
     return <>
-        <div className="chat py-10">
+        <div className="chat py-10 flex-grow">
             {userMessages.map((msg, i) => (
                 <div key={i}>
                     <div className="text-right">
@@ -45,10 +44,13 @@ export function Chat({ apiKey }: { apiKey: string }) {
                 </div>
             ))}
         </div>
-        <div className="fixed bottom-0 left-1/2 transform -translate-x-1/2 w-3/4 py-2 px-2">
-            <Input type="text" className="w-full" value={prompt} onChange={(e) => setPrompt(e.target.value)} endContent={
-                <Button className="rounded-full bg-transparent hover:bg-primary" onPress={handleClick}><PaperAirplaneIcon /></Button>
-            } />
+        <div className="fixed bottom-0 left-0 w-full py-2 px-4 border-t border-gray-300">
+            <div className="flex items-center">
+            <Input type="text" className="flex-grow mr-2" value={prompt} onChange={(e) => setPrompt(e.target.value)} />
+            <Button className="rounded-full bg-primary text-white hover:bg-primary-dark" onPress={handleClick}>
+                <i className="bi bi-send-fill"></i>
+            </Button>
+            </div>
         </div>
     </>
 

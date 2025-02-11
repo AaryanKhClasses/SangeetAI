@@ -1,6 +1,6 @@
 {
     "name": "sangeetai",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "private": true,
     "scripts": {
         "dev": "next dev --turbopack",
@@ -14,6 +14,7 @@
         "bootstrap-icons": "^1.11.3",
         "framer-motion": "^12.0.6",
         "next": "15.1.6",
+        "pitchy": "^4.1.0",
         "react": "^19.0.0",
         "react-dom": "^19.0.0",
         "react-markdown": "^9.0.3"

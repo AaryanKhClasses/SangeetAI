@@ -26,7 +26,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
                 <Provider>
                     <Nav />
-                    <div className="container my-6 px-3 flex flex-col min-h-screen">
+                    <div className="my-6 px-3 flex flex-col min-h-screen">
                         <div className="flex-grow">{children}</div>
                         {/* <footer className="py-4 bg-gray-800 text-center text-sm text-gray-400">
                             <p>&copy; 2025 SangeetAI. All rights reserved.</p>

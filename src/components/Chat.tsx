@@ -42,7 +42,7 @@ export function Chat({ apiKey }: { apiKey: string }) {
         setPrompt("")
         setLoading(true)
         setAiMessages([...aiMessages, `Generating Output ${dots[0]}`])
-        const res = await useAI(prompt, chat)
+        const res = await UseAI(prompt, chat)
         setLoading(false)
         setAiMessages((prev) => prev.slice(0, -1).concat(res.response.text()))
     }
@@ -89,7 +89,7 @@ export function Chat({ apiKey }: { apiKey: string }) {
         </div>
     </>
 
-    async function useAI(prompt: string, chat: ChatSession) {
+    async function UseAI(prompt: string, chat: ChatSession) {
         const res = await chat.sendMessage(prompt)
         return res
     }

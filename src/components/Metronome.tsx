@@ -7,7 +7,7 @@ import { useState } from "react"
 const audioContext = new window.AudioContext()
 let currentBeat = 0, nextNoteTime = 0, intervalID: NodeJS.Timeout | null = null
 
-export function Metronome() {
+export default function Metronome() {
     const [bpm, setBpm] = useState<SliderValue>(120)
     const [playing, setPlaying] = useState(false)
 

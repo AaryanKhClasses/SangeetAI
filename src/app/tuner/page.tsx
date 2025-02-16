@@ -1,5 +1,5 @@
-import { Tuner } from "@/components/Tuner"
+import TunerNoSSR from "@/components/NoSSR/Tuner"
 
 export default function TunerPage() {
-    return <Tuner />
+    return <TunerNoSSR />
 }

@@ -1,5 +1,5 @@
-import { Metronome } from "@/components/Metronome"
+import MetronomeNoSSR from "@/components/NoSSR/Metronome"
 
 export default function MetronomePage() {
-    return <Metronome />
+    return <MetronomeNoSSR />
 }

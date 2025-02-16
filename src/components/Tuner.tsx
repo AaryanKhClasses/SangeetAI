@@ -31,7 +31,7 @@ function getNearestNote(pitch: number) {
     return nearestNote
 }
 
-export function Tuner() {
+export default function Tuner() {
     const [pitch, setPitch] = useState(0)
     const [clarity, setClarity] = useState(0)
     const [note, setNote] = useState("")
@@ -63,7 +63,8 @@ export function Tuner() {
         }
     }, [])
     const handleButtonClick = useCallback(() => {
-        audioContext.state === "running" ? audioContext.suspend() : audioContext.resume()
+        if (audioContext.state === "running") audioContext.suspend()
+        else audioContext.resume()
     }, [])
     return <div className="container mx-auto p-4">
         <div className="mb-4">

@@ -5,7 +5,7 @@ import { Input } from "@heroui/input"
 import { Button } from '@heroui/button'
 import { ChatSession, GoogleGenerativeAI } from '@google/generative-ai'
 import ReactMarkdown from 'react-markdown'
-import { Avatar } from '@heroui/react'
+import { Image } from '@heroui/react'
 
 export function Chat({ apiKey }: { apiKey: string }) {
     const genAI = new GoogleGenerativeAI(apiKey)
@@ -68,7 +68,7 @@ export function Chat({ apiKey }: { apiKey: string }) {
                         </div>
                         {aiMessages[i] && (
                             <div className="text-left flex">
-                                <Avatar src="icon.png" />
+                                <Image width={60} height={60} alt="AIAvatar" src="icon.png" />
                                 <div className="inline-block p-2 m-1 rounded-lg bg-[#27272a] max-w-[90%] break-words">
                                     <ReactMarkdown>{aiMessages[i]}</ReactMarkdown>
                                 </div>

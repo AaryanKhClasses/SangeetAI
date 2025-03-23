@@ -36,7 +36,7 @@ export default function Metronome() {
                 startContent={ <Button isIconOnly radius="full" onPress={() => setBpm((prev) => (Number(prev) >= 10 ? Number(prev) - 10 : 0))}><i className="bi bi-volume-down-fill"></i></Button> }
                 endContent={ <Button isIconOnly radius="full" onPress={() => setBpm((prev) => (Number(prev) <= 230 ? Number(prev) + 10 : 240))}><i className="bi bi-volume-up-fill"></i></Button> }
             />
-            <Button className="px-4 py-2 text-lg font-semibold bg-foreground text-background rounded-full" onPress={() => {setPlaying(!playing); handlePlaying()}}>{playing ? <><i className="bi bi-stop-fill mr-2"></i><span>Stop</span></> : <><i className="bi bi-play-fill mr-2"></i><span>Start</span></>}</Button>
+            <Button className="px-4 py-2 text-lg font-semibold bg-foreground text-background rounded-full text-[#D4AF37] shadow-lg transform transition-transform hover:scale-100 " onPress={() => {setPlaying(!playing); handlePlaying()}}>{playing ? <><i className="bi bi-stop-fill mr-2"></i><span>Stop</span></> : <><i className="bi bi-play-fill mr-2"></i><span>Start</span></>}</Button>
         </div>
     </>
 }

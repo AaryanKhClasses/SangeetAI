@@ -34,7 +34,7 @@ export function Chat({ apiKey }: { apiKey: string }) {
             }, 500)
         }
         return () => clearInterval(interval)
-    }, [loading])
+    }, [loading, dots])
 
     const handleClick = async () => {
         if (!prompt.trim()) return

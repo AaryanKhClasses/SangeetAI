@@ -64,12 +64,12 @@ export function Chat({ apiKey }: { apiKey: string }) {
                 {userMessages.map((msg, i) => (
                     <div key={i}>
                         <div className="text-right">
-                            <div className="inline-block p-2 m-1 rounded-lg bg-[#3f3f46] max-w-[90%] break-all">{msg}</div>
+                            <div className="inline-block p-2 m-1 rounded-lg bg-[#363636] border-[#444444] max-w-[90%] break-all">{msg}</div>
                         </div>
                         {aiMessages[i] && (
                             <div className="text-left flex">
                                 <Image width={60} height={60} alt="AIAvatar" src="icon.png" />
-                                <div className="inline-block p-2 m-1 rounded-lg bg-[#27272a] max-w-[90%] break-words">
+                                <div className="inline-block p-2 m-1 rounded-lg bg-[#212327] border-[#444444] max-w-[90%] break-words">
                                     <ReactMarkdown>{aiMessages[i]}</ReactMarkdown>
                                 </div>
                             </div>
@@ -84,7 +84,7 @@ export function Chat({ apiKey }: { apiKey: string }) {
                         <i className="bi bi-send-fill"></i>
                     </Button>
                 </div>
-                <p className="text-tiny text-slate-400">SangeetAI can make mistakes. Consider checking important information.</p>
+                <p className="text-tiny text-white">SangeetAI can make mistakes. Consider checking important information.</p>
             </div>
         </div>
     </>

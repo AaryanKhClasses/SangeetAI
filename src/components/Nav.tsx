@@ -4,7 +4,7 @@ import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenu, NavbarMenuT
 
 
 export function Nav() {
-    return <Navbar>
+    return <Navbar isBordered={true} className="border-black">
         <NavbarBrand>
             <span className="text-2xl cursor-pointer mx-2 flex flex-row items-center" onClick={() => window.location.href = "/"}>
                 <Image src="logo.png" width={150} height={80} alt="SangeetAI Logo" />

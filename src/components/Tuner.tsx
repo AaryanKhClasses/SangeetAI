@@ -1,7 +1,6 @@
 "use client"
 
 import { Button } from "@heroui/button"
-import { Input } from "@heroui/input"
 import { PitchDetector } from "pitchy"
 import { useCallback, useEffect, useState } from "react"
 
@@ -66,17 +65,11 @@ export default function Tuner() {
         if (audioContext.state === "running") audioContext.suspend()
         else audioContext.resume()
     }, [])
-    return <div className="container mx-auto p-4">
-        <div className="mb-4">
-            <h2 className="text-2xl">Pitch: <Input disabled value={pitch.toString()} /></h2>
-        </div>
-        <div className="mb-4">
-            <h2 className="text-2xl">Clarity: <Input disabled value={clarity.toString()} /></h2>
-        </div>
-        <div className="mb-4">
-            <h2 className="text-2xl align-center justify-self-center">{note}</h2>
-        </div>
-        <Button onPress={handleButtonClick} className="flex items-center">
+    return <div className="flex flex-col items-center justify-center min-h-screen bg-background text-foreground">
+        <h1 className="text-5xl font-bold mb-8">Pitch: {pitch.toString()}</h1>
+        <h1 className="text-5xl font-bold mb-8">Clarity: {clarity.toString()}</h1>
+        <h1 className="text-5xl font-bold mb-8">Note: {note || "Not Playing"}</h1>
+        <Button className="px-4 py-2 text-lg font-semibold bg-foreground text-background rounded-full text-[#D4AF37] shadow-lg transform transition-transform hover:scale-100 " onPress={handleButtonClick}>
             {audioContext.state === "running" ? <><i className="bi bi-stop-fill mr-2"></i><span>Stop</span></> : <><i className="bi bi-play-fill mr-2"></i><span>Start</span></>}
         </Button>
     </div>

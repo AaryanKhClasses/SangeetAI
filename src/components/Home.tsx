@@ -61,8 +61,8 @@ export default function Home() {
         </div>
         <div ref={sectionRef}>
             <Card className="p-4 m-4 from bg-[#00000099] text-white">
-                <CardBody className="flex flex-row">
-                    <div className="flex-col flex flex-grow">
+                <CardBody className="flex flex-row items-center justify-center gap-10">
+                    <div className="flex-col flex w-1/2">
                         <h1 className="text-[2rem] font-bold text-[#FFFFF0]">Tuner</h1>
                         <p className="text-[#f1f1f1]">Unlock the full potential of precision with our online tuner! Whether you're perfecting your instrument's pitch or fine-tuning settings for peak performance, our intuitive tuner is here to guide you. With real-time feedback, seamless controls, and a sleek interface, making adjustments has never been this effortless—or this fun. Simply open the tuner, follow the visual cues, and watch as perfection takes shape before your eyes. No guesswork, no hassle—just pure, refined accuracy at your fingertips. Ready to fine-tune like a pro? Dive in and experience the difference! </p>
                     <Button as={Link} href='/tuner' className="mt-2 bg-gradient-to-r from-[#FFD700] to-[#B22222] shadow-medium transition-shadow">Check It Out!</Button>
@@ -71,8 +71,8 @@ export default function Home() {
                 </CardBody>
             </Card>
             <Card className="p-4 m-4 bg-gradient-to-r bg-[#00000099] text-white">
-            <CardBody className="flex flex-row-reverse">
-                    <div className="flex-col flex flex-grow px-6">
+            <CardBody className="flex flex-row-reverse items-center justify-center gap-10">
+                    <div className="flex-col flex w-1/2 px-6">
                         <h1 className="text-[2rem] font-bold text-[#FFFFF0]">Metronome</h1>
                         <p className="text-[#f1f1f1]">Stay in perfect rhythm with our online metronome! Whether you're a musician mastering tempo or just looking to sharpen your timing, our sleek and easy-to-use metronome keeps you on beat every step of the way. Set your desired tempo, customize the time signature, and let the steady pulse guide your practice with precision. With its intuitive design and real-time responsiveness, you'll never miss a beat—literally. Say goodbye to inconsistent timing and hello to flawless rhythm. Ready to lock into the groove? Start the metronome and feel the beat take over! </p>
                     <Button as={Link} href='/metronome' className="mt-2 bg-gradient-to-r from-[#FFD700] to-[#B22222] shadow-medium transition-shadow">Check It Out!</Button>
@@ -81,8 +81,8 @@ export default function Home() {
                 </CardBody>
             </Card> 
             <Card className="p-4 m-4 bg-[#00000099] text-white">
-            <CardBody className="flex flex-row">
-                    <div className="flex-col flex flex-grow">
+            <CardBody className="flex flex-row items-center justify-center gap-10">
+                    <div className="flex-col flex w-1/2">
                         <h1 className="text-[2rem] font-bold text-[#FFFFF0]">Create with AI</h1>
                         <p className="text-[#f1f1f1]">Unleash your creativity with the power of AI! Whether you're crafting stunning visuals, generating unique ideas, or exploring new artistic possibilities, our AI-powered tool is here to transform your imagination into reality. Simply input your vision, tweak the settings, and watch as AI brings your concepts to life with breathtaking precision. No complex skills required—just pure creativity at your fingertips. Ready to create something extraordinary? Dive in and let AI elevate your artistry to the next level! </p>
                     <Button as={Link} href='/create-music' className="mt-2 bg-gradient-to-r from-[#FFD700] to-[#B22222] shadow-medium transition-shadow">Check It Out!</Button>

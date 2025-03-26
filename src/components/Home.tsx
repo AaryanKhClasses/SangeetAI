@@ -59,7 +59,7 @@ export default function Home() {
                 </div>
             </div>
         </div>
-        <div ref={sectionRef} className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
+        <div ref={sectionRef} className="grid grid-cols-1 md:gap-0 gap-4 p-4">
             <Card className="p-4 md:m-4 from bg-[#00000099] text-white">
                 <CardBody className="flex md:flex-row flex-col-reverse items-center justify-center gap-10">
                     <div className="flex-col flex md:w-1/2">
@@ -72,7 +72,7 @@ export default function Home() {
             </Card>
             <Card className="p-4 md:m-4 bg-gradient-to-r bg-[#00000099] text-white">
             <CardBody className="flex md:flex-row-reverse flex-col-reverse items-center justify-center gap-10">
-                    <div className="flex-col flex md:w-1/2 px-6">
+                    <div className="flex-col flex md:w-1/2">
                         <h1 className="text-[2rem] font-bold text-[#FFFFF0]">Metronome</h1>
                         <p className="text-[#f1f1f1]">Stay in perfect rhythm with our online metronome! Whether you're a musician mastering tempo or just looking to sharpen your timing, our sleek and easy-to-use metronome keeps you on beat every step of the way. Set your desired tempo, customize the time signature, and let the steady pulse guide your practice with precision. With its intuitive design and real-time responsiveness, you'll never miss a beat—literally. Say goodbye to inconsistent timing and hello to flawless rhythm. Ready to lock into the groove? Start the metronome and feel the beat take over! </p>
                     <Button as={Link} href='/metronome' className="mt-2 bg-gradient-to-r from-[#FFD700] to-[#B22222] shadow-medium transition-shadow">Check It Out!</Button>

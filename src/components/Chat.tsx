@@ -64,12 +64,12 @@ export function Chat({ apiKey }: { apiKey: string }) {
                 {userMessages.map((msg, i) => (
                     <div key={i}>
                         <div className="text-right">
-                            <div className="inline-block p-2 m-1 rounded-lg bg-[#363636] border-[#444444] max-w-[90%] break-all">{msg}</div>
+                            <div className="inline-block p-2 m-1 rounded-lg bg-[#264480] border-[#444444] max-w-[90%] break-all">{msg}</div>
                         </div>
                         {aiMessages[i] && (
-                            <div className="text-left flex">
-                                <Image width={60} height={60} alt="AIAvatar" src="icon.png" />
-                                <div className="inline-block p-2 m-1 rounded-lg bg-[#212327] border-[#444444] max-w-[90%] break-words">
+                            <div className="text-left md:flex">
+                                <div className="flex flex-row text-xl"><Image width={60} height={60} alt="AIAvatar" src="icon.png" /><span className="md:hidden self-center">SangeetAI</span></div>
+                                <div className="inline-block p-2 m-1 rounded-lg bg-[#1a1551] border-[#444444] max-w-[90%] break-words">
                                     <ReactMarkdown>{aiMessages[i]}</ReactMarkdown>
                                 </div>
                             </div>

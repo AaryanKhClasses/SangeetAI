@@ -1,6 +1,6 @@
 "use client"
 
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenu, NavbarMenuToggle, Link, Image } from "@heroui/react"
+import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenu, NavbarMenuToggle, Link, Image, NavbarMenuItem } from "@heroui/react"
 
 
 export function Nav() {
@@ -17,9 +17,9 @@ export function Nav() {
             <NavbarMenuToggle className="md:hidden"></NavbarMenuToggle>
         </NavbarContent>
         <NavbarMenu>
-            <NavbarItem><Link className="text-xl text-primary hover:text-danger" href="/tuner">Tuner</Link></NavbarItem>
-            <NavbarItem><Link className="text-xl hover:text-danger" href="/metronome">Metronome</Link></NavbarItem>
-            <NavbarItem><Link className="text-xl hover:text-danger" href="/create-music">Create with AI</Link></NavbarItem>
+            <NavbarMenuItem><Link className="text-shadow: 0px 0px 4px rgba(255, 215, 0, 0.6); text-white text-2xl hover:text-[#351414] transition " href="/tuner">Tuner</Link></NavbarMenuItem>
+            <NavbarMenuItem><Link className="text-shadow: 0px 0px 4px rgba(255, 215, 0, 0.6); text-white text-2xl hover:text-[#351414] transition " href="/metronome">Metronome</Link></NavbarMenuItem>
+            <NavbarMenuItem><Link className="text-shadow: 0px 0px 4px rgba(255, 215, 0, 0.6); text-white text-2xl hover:text-[#351414] transition " href="/create-music">Create with AI</Link></NavbarMenuItem>
         </NavbarMenu>
     </Navbar>
 }

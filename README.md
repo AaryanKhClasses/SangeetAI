@@ -1,8 +1,12 @@
 # SangeetAI
 Your AI-Powered Guide to Indian Classical Music.
+
 Made for the 2025 Google Solution Challenge.
-Version: 0.3.2
+
+Version: 0.3.3
+
 Link to SangeetAI: [here](https://sangeetai-xi.vercel.app)
+
 GitHub Repository: [here](https://github.com/AaryanKhClasses/SangeetAI)
 
 ## Problem Statement:

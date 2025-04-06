@@ -84,7 +84,10 @@ export function Chat({ apiKey }: { apiKey: string }) {
                         <i className="bi bi-send-fill"></i>
                     </Button>
                 </div>
-                <p className="text-tiny text-white">SangeetAI can make mistakes. Consider checking important information.</p>
+                <div className="flex flex-row w-full justify-between items-center">
+                    <p className="text-tiny text-white">SangeetAI can make mistakes. Consider checking important information.</p>
+                    <p className="text-tiny text-white">&copy; 2025 SangeetAI. All rights reserved.</p>
+                </div>
             </div>
         </div>
     </>

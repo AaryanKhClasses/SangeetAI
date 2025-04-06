@@ -46,14 +46,11 @@ export default function Home() {
     return <>
         <div className="items-center justify-center flex flex-col p-4 h-screen">
             <div className="p-12 rounded-xl shadow-5xl">
-                <div className="flex flex-row items-center space-x-2">
-                    <h1 className="text-[5rem] font-bold text-white">Sangeet</h1> 
-                    <span className="text-[3em] p-2 rounded-md border-large text-gray-900 bg-white font-extrabold">AI</span>
-                </div>
-                <p className="text-center text-foreground text-[1.5em] text-gray-300">Tune In With AI</p>
+                <Image src={"/logo.png"} alt="Logo" width={400} height={250} />
+                <p className="text-center text-foreground text-[2rem]">Tune In With AI</p>
 
                 <div className="flex items-center justify-center mt-4">
-                    <Button as={Link} href="/create-music" className="flex items-center text-[1.5rem] bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white py-2 px-4 rounded-md shadow-lg transform transition-transform hover:scale-105 hover:from-[#FFD700] hover:to-orange-500 active:bg-orange-600">
+                    <Button as={Link} href="/create-music" className="flex items-center text-[1.5rem] bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white py-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:from-[#FFD700] hover:to-orange-500 active:bg-orange-600">
                         <i className="bi bi-music-note-beamed mr-2"></i>Start Creating Now!
                     </Button>
                 </div>

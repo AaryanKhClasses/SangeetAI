@@ -74,11 +74,10 @@ The Tuner helps you accurately tune your instruments.
 ## Future of the Project:
 ### Current Plans:
 This was initially a repository just made for the Google Solution Challenge 2025; however we are looking forward into maintaining this project for some time, which includes addition of many more features and bug fixes which were not possible during the initial hackathon period.
-1. Making the AI Chat bot Better.
-2. Improving the overall UI of the application.
-3. A mobile version of the application.
-4. Ability to add user-specific Gemini API Keys in order to not be rate limited.
-5. Bugfix the tuner and add more features to the metronome.
+1. **Improve the overall UI of the application:** The UI of SangeetAI can be improved with a unique title font, subtle Indian-themed visuals, and better mobile responsiveness.
+2. **Mobile version of the application:** Build dedicated mobile apps for on-the-go practice, offline access, and a more seamless user experience.
+3. **Virtual Instruments Integration:** Add a digital tanpura, tabla, harmonium, or even a virtual synthesizer to simulate accompaniment during practice.
+4. **Bugfix and Improvement of existing features:** Bugfix the tuner and add more features to the metronome like tap tempo and sound customizations.
 
 ### Contributing:
 Once after the hackathon period finishes, if you're interested in contributing and maintaining the project, please feel free to do so. Follow the below steps to contribute:
